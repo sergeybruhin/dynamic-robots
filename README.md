@@ -2,7 +2,6 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/sergeybruhin/dynamic-robots.svg?style=flat-square)](https://packagist.org/packages/sergeybruhin/dynamic-robots)
 [![Total Downloads](https://img.shields.io/packagist/dt/sergeybruhin/dynamic-robots.svg?style=flat-square)](https://packagist.org/packages/sergeybruhin/dynamic-robots)
-![GitHub Actions](https://github.com/sergeybruhin/dynamic-robots/actions/workflows/main.yml/badge.svg)
 
 Very basic and simple package to show different robots.txt files for different environments. Just create new directory,
 create blade files with environment names.
@@ -33,6 +32,8 @@ return [
     'directory' => 'robots',
 ];
 ```
+
+### ☝️ If you have robots.txt in public folder don't forget to delete it!
 
 ### Testing (Not yet 💁‍♂️)
 
