@@ -35,6 +35,10 @@ return [
 
 ### ☝️ If you have robots.txt in public folder don't forget to delete it!
 
+### Create Default robots.txt
+If there are no blade file for current environment, default.blade.php will be used. 
+So don't forget to create it in **/resources/views/{your-folder}** directory!
+
 ### Testing (Not yet 💁‍♂️)
 
 ```bash
