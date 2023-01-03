@@ -3,8 +3,8 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/sergeybruhin/dynamic-robots.svg?style=flat-square)](https://packagist.org/packages/sergeybruhin/dynamic-robots)
 [![Total Downloads](https://img.shields.io/packagist/dt/sergeybruhin/dynamic-robots.svg?style=flat-square)](https://packagist.org/packages/sergeybruhin/dynamic-robots)
 
-Very basic and simple package to show different robots.txt files for different environments. Just create new directory,
-create blade files with environment names.
+Very basic and simple package to show different robots.txt files for different environments. Just create new directory
+and create there blade files with environment names. That's it!
 
 ## Installation
 
@@ -21,7 +21,10 @@ php artisan vendor:publish --provider="SergeyBruhin\DynamicRobots\Providers\Dyna
 ```
 
 ### Set robots blade files directory
-If you want to change robots.txt for production environment just add **production.blade.php** with robots.txt content to **resources/views/robots** and that's it. 
+
+If you want to change robots.txt for production environment just add **production.blade.php** with robots.txt content
+to **resources/views/robots**.
+
 ```php
 return [
     /**
@@ -33,11 +36,14 @@ return [
 ];
 ```
 
-### ☝️ If you have robots.txt in public folder don't forget to delete it!
-
 ### Create Default robots.txt
+
 If there are no blade file for current environment, default.blade.php will be used. 
-So don't forget to create it in **/resources/views/{your-folder}** directory!
+So don't forget to create it in **/resources/views/{your-directory}**!
+
+### ⚠️ If you have robots.txt in public folder don't forget to delete it!
+
+
 
 ### Testing (Not yet 💁‍♂️)
 
