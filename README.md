@@ -20,6 +20,7 @@ composer require sergeybruhin/dynamic-robots
 php artisan vendor:publish --provider="SergeyBruhin\DynamicRobots\Providers\DynamicRobotsServiceProvider"
 ```
 
+
 ### Set robots blade files directory
 
 If you want to change robots.txt for production environment just add **production.blade.php** with robots.txt content
@@ -36,10 +37,19 @@ return [
 ];
 ```
 
+
 ### Create Default robots.txt
 
 If there are no blade file for current environment, default.blade.php will be used. 
 So don't forget to create it in **/resources/views/{your-directory}**!
+
+### Default robots.txt from package if user robots.txt not exists
+
+```text
+User-agent: *
+Disallow: /admin/*
+Disallow: /nova/*
+```
 
 ### ⚠️ If you have robots.txt in public folder don't forget to delete it!
 
@@ -54,6 +64,12 @@ composer test
 ### Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
+
+## ToDo
+
+- [ ] Add ability to programmatically change robots files 
+- [ ] Add ability to set default rule set via config 
+
 
 ## Contributing
 
